@@ -1,0 +1,124 @@
+body {
+    text-align: center;
+    position: relative;
+}
+
+.div2 {
+    height: 1000px;
+    width: 1000px;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#btncontainer {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 160px;
+    left: 500px;
+    justify-content: space-evenly;
+}
+
+.yellow {
+    background-color: rgb(205, 219, 80);
+}
+
+.red {
+    background-color: rgb(219, 112, 80);
+}
+
+.green {
+    background-color: rgb(92, 219, 80);
+}
+
+.blue {
+    background-color: rgb(80, 184, 219);
+}
+
+.flash {
+    background-color: white;
+}
+
+.userflash {
+    background-color: rgb(214, 243, 171);
+}
+
+@keyframes flashred {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(219, 112, 80);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.redmagic {
+    animation: flashred 0.5s linear;
+}
+
+@keyframes flashgreen {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(92, 219, 80);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.greenmagic {
+    animation: flashgreen 0.5s linear;
+}
+
+@keyframes flashblue {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(80, 184, 219);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.bluemagic {
+    animation: flashblue 0.5s linear;
+}
+
+@keyframes flashyellow {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(205, 219, 80);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.yellowmagic {
+    animation: flashyellow 0.5s linear;
+}
